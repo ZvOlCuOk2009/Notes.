@@ -34,8 +34,6 @@
     NSArray *buttons = @[deleteItem, saveItem];
     self.navigationItem.rightBarButtonItems = buttons;
     
-    self.scrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Image"]];
-    
     NSDateFormatter *dateFormater = [[NSDateFormatter alloc] init];
     dateFormater.dateFormat = @"dd.MM.yyyy HH:mm";
     self.currentData = [dateFormater stringFromDate:[NSDate date]];
@@ -43,6 +41,8 @@
     self.dataLabel.text = self.data;
     self.headerLabel.text = [[self.content componentsSeparatedByString:@" "] objectAtIndex:0];
     self.contentTextView.text = self.content;
+    
+    //self.scrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Image"]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -31,6 +31,14 @@
     
     self.navigationItem.leftBarButtonItem = addItem;
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    /*
+    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+    */
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,7 +50,7 @@
 {
     [super viewWillAppear:animated];
     
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Image"]];
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Image"]];
     
     UIColor *tintColor = [UIColor colorWithRed:228.0f/255.0f green:171.0f/255.0f blue:31.0f/255.0f alpha:1];
     self.navigationController.navigationBar.tintColor = tintColor;
